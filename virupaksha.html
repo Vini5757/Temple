@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Virupaksha Temple, Hampi</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function bookTicket() {
+      const phone = document.getElementById("phone").value;
+      const persons = document.getElementById("persons").value;
+
+      if (phone === "" || persons === "") {
+        alert("Please enter both phone number and number of persons.");
+      } else {
+        alert("Your ticket has been booked.\nPhone: " + phone + "\nNumber of persons: " + persons);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Virupaksha Temple, Hampi</h1>
+  </header>
+  <main>
+    <br>
+    <img src="virupaksha.jpg" alt="Virupaksha Temple" width="400">
+    <p><strong>Location:</strong> Hampi, Karnataka</p><p><a href="https://www.google.com/maps/place/Virupaksheshwara+Temple/@15.335015,76.4409426,3198m/data=!3m1!1e3!4m10!1m2!2m1!1sVirupaksha+Temple,+Hampi.!3m6!1s0x3bb77f35e600c43b:0x67ed85879836db4!8m2!3d15.3350152!4d76.4599983!15sChlWaXJ1cGFrc2hhIFRlbXBsZSwgSGFtcGkuWhkiF3ZpcnVwYWtzaGEgdGVtcGxlIGhhbXBpkgEMaGluZHVfdGVtcGxlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVVJzYlZwMVMwZG5FQUWqAUAQATIfEAEiGyK-rnv8rKIGH4aK_QlUEwqxLo0W2fV6ZIC6fTIbEAIiF3ZpcnVwYWtzaGEgdGVtcGxlIGhhbXBp4AEA-gEECAAQOw!16s%2Fg%2F11fp8bcl1h?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D">Temple Location</a> </p>
+    <p><strong>Deity:</strong> Lord Shiva</p>
+    <p><strong>Timings:</strong> 6:00 AM – 8:00 PM</p>
+    <p><strong>Description:</strong> Part of the Hampi group of monuments, this ancient temple is known for its stunning architecture and continuous worship since the 7th century.</p>
+   <h2>Book Your Visit</h2>
+    <form onsubmit="event.preventDefault(); bookTicket();">
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="persons">Number of Persons:</label><br>
+      <input type="number" id="persons" name="persons" min="1" required><br><br>
+
+      <button type="submit">Book Ticket</button>
+    </form>
+   <div class="button-grid">
+  <a href="index.html" class="back-button">Back to Home</a>
+</div>
+
+  </main>
+</body>
+</html>

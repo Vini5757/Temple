@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brihadeeswara Temple, Thanjavu</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function bookTicket() {
+      const phone = document.getElementById("phone").value;
+      const persons = document.getElementById("persons").value;
+
+      if (phone === "" || persons === "") {
+        alert("Please enter both phone number and number of persons.");
+      } else {
+        alert("Your ticket has been booked.\nPhone: " + phone + "\nNumber of persons: " + persons);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Brihadeeswara Temple, Thanjavur</h1></header>
+  <main>
+    <img src="thanjavur.jpg" alt="Brihadeeswara Temple" width="400">
+    <p><strong>Location:</strong> Thanjavur, Tamil Nadu</p>
+    <p><strong>Deity:</strong> Shiva</p>
+    <p><strong>Timings:</strong> 6:00 AM – 12:30 PM, 4:00 PM – 8:30 PM</p>
+    <p><strong>Description:</strong> Built by Raja Raja Chola I in the 11th century, this is one of the largest temples in India and a gem of Chola architecture.</p>
+    <h2>Book Your Visit</h2>
+    <form onsubmit="event.preventDefault(); bookTicket();">
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="persons">Number of Persons:</label><br>
+      <input type="number" id="persons" name="persons" min="1" required><br><br>
+
+      <button type="submit">Book Ticket</button>
+    </form>
+   <div class="button-grid">
+  <a href="index.html" class="back-button">Back to Home</a>
+</div>
+
+  </main>
+</body>
+</html>
+

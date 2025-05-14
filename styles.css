@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('bg1.jpg') no-repeat center center fixed;
+  background-size:cover;
+  height: 10px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+.temple-button {
+  background: #da6f04;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.button-grid {
+  display: flex;
+  justify-content: flex-start; /* or center / flex-end as desired */
+  margin-top: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Blue background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.temple-button:hover {
+  background: #db620c;
+}
+
+footer {
+  background: #f19605;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
