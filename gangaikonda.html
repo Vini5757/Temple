@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gangaikonda Cholapuram Temple</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function bookTicket() {
+      const phone = document.getElementById("phone").value;
+      const persons = document.getElementById("persons").value;
+
+      if (phone === "" || persons === "") {
+        alert("Please enter both phone number and number of persons.");
+      } else {
+        alert("Your ticket has been booked.\nPhone: " + phone + "\nNumber of persons: " + persons);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Gangaikonda Cholapuram Temple</h1></header>
+  <main>
+    <br>
+    <img src="gaggai.jpg" alt="Gangaikonda Cholapuram Temple" width="400">
+    <p><strong>Location:</strong> Jayankondam, Tamil Nadu</p><p><a href="https://www.google.com/maps/place/Arulmigu+Peruvudaiyar+Thirukovil+(Gangaikonda+Chozhapuram)/@11.2063728,79.4463992,813m/data=!3m1!1e3!4m10!1m2!2m1!1sGangaikonda+Cholapuram+Temple!3m6!1s0x3a54d435fc34411d:0xb024f2cefef6555b!8m2!3d11.2063794!4d79.4494846!15sCh1HYW5nYWlrb25kYSBDaG9sYXB1cmFtIFRlbXBsZVofIh1nYW5nYWlrb25kYSBjaG9sYXB1cmFtIHRlbXBsZZIBDGhpbmR1X3RlbXBsZaoBRhABMh8QASIbZzwWGm7uVVV8qUPlnvcM0cRY0FtHas4JXS-hMiEQAiIdZ2FuZ2Fpa29uZGEgY2hvbGFwdXJhbSB0ZW1wbGXgAQA!16s%2Fg%2F11bc6ycxyw?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D">Temple Location </a></p>
+    <p><strong>Deity:</strong> Shiva</p>
+    <p><strong>Timings:</strong> 6:00 AM – 12:00 PM, 4:00 PM – 8:00 PM</p>
+    <p><strong>Description:</strong> Built by Rajendra Chola I to commemorate his victory over the Ganges, it resembles Brihadeeswara but with finer detailing.</p>
+    <h2>Book Your Visit</h2>
+    <form onsubmit="event.preventDefault(); bookTicket();">
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="persons">Number of Persons:</label><br>
+      <input type="number" id="persons" name="persons" min="1" required><br><br>
+
+      <button type="submit">Book Ticket</button>
+    </form>
+   <div class="button-grid">
+  <a href="index.html" class="back-button">Back to Home</a>
+</div>
+
+  </main>
+</body>
+</html>

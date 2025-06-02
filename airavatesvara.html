@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airavatesvara Temple, Darasuram</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function bookTicket() {
+      const phone = document.getElementById("phone").value;
+      const persons = document.getElementById("persons").value;
+
+      if (phone === "" || persons === "") {
+        alert("Please enter both phone number and number of persons.");
+      } else {
+        alert("Your ticket has been booked.\nPhone: " + phone + "\nNumber of persons: " + persons);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Airavatesvara Temple, Darasuram</h1></header>
+  <main>
+    <br>
+    <img src="airave.jpg" alt="Airavatesvara Temple" width="400">
+    <p><strong>Location:</strong> Darasuram, Tamil Nadu</p>
+    <p><a href="https://www.google.com/maps/place/Dharasuram+Sri+Airavatesvara+Temple/@10.9483903,79.3539731,814m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3baacd15bd8b0bbb:0xedd65959af78b9ea!8m2!3d10.948385!4d79.356548!16s%2Fm%2F02q94jg?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D">
+      Temple Location</a>
+    </p>
+    <p><strong>Deity:</strong> Shiva</p>
+    <p><strong>Timings:</strong> 6:00 AM – 12:30 PM, 4:00 PM – 8:30 PM</p>
+    <p><strong>Description:</strong> A 12th-century temple built by Rajaraja Chola II, known for its stone chariot and fine sculpture work.</p>
+
+    <h2>Book Your Visit</h2>
+    <form onsubmit="event.preventDefault(); bookTicket();">
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <label for="persons">Number of Persons:</label><br>
+      <input type="number" id="persons" name="persons" min="1" required><br><br>
+
+      <button type="submit">Book Ticket</button>
+    </form>
+   <div class="button-grid">
+  <a href="index.html" class="back-button">Back to Home</a>
+</div>
+
+
+
+  </main>
+</body>
+</html>
